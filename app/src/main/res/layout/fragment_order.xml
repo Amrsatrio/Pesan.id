@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFDF35"
+	android:clipChildren="false"
+	android:orientation="vertical"
+	android:padding="24dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginBottom="48dp"
+		android:layout_weight="1"
+		android:gravity="center">
+
+		<ImageView
+			android:id="@+id/imageView"
+			android:layout_width="wrap_content"
+			android:layout_height="120dp"
+			android:adjustViewBounds="true"
+			android:src="@drawable/artwork_order_placed" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/rounded_opaque"
+		android:clipToPadding="false"
+		android:orientation="vertical"
+		android:padding="24dp">
+
+		<FrameLayout
+			android:layout_width="96dp"
+			android:layout_height="96dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="-72dp"
+			android:layout_marginBottom="16dp"
+			android:background="@drawable/icon_bg">
+
+			<ImageView
+				android:id="@+id/icon"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="16dp"
+				android:src="@drawable/ic_history_24dp"
+				app:tint="#FFF" />
+		</FrameLayout>
+
+		<TextView
+			android:id="@+id/statusTitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:text="Meja Anda sudah siap!"
+			android:textColor="?android:textColorPrimary"
+			android:textSize="28sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/statusSubtitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:gravity="center_horizontal"
+			android:text="Silahkan menuju ke restoran."
+			android:textColor="?android:textColorPrimary"
+			android:textSize="18sp" />
+
+		<LinearLayout
+			android:id="@+id/orderDetails"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="24dp">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-medium"
+					android:text="No. Meja"
+					android:textAllCaps="true" />
+
+				<TextView
+					android:id="@+id/tableNumber"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="14"
+					android:textColor="?android:textColorPrimary"
+					android:textSize="28sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-medium"
+					android:text="Sisa Waktu"
+					android:textAllCaps="true" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical">
+
+					<com.google.android.material.progressindicator.CircularProgressIndicator
+						android:id="@+id/timeRemainingProgress"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="2dp"
+						android:max="300"
+						android:progress="60"
+						app:indicatorSize="28dp"
+						app:trackColor="#10000000" />
+
+					<com.amrsatrio.pesanid.ui.UpdateEverySecondTextView
+						android:id="@+id/timeRemainingText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="12m 3s"
+						android:textColor="?android:textColorPrimary"
+						android:textSize="28sp" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/imgQr"
+			android:layout_width="96dp"
+			android:layout_height="96dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="16dp"
+			android:src="#F0F" />
+
+		<TextView
+			android:id="@+id/orderId"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:text="F01234567" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="24dp"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="32dp"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_marginEnd="4dp"
+					android:src="@drawable/ic_access_time_24" />
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Waktu Booking"
+					android:textColor="?android:textColorPrimary"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/timestamp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="15 April 2021, 12.02"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/btnCta"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="16dp"
+			android:text="Kembali ke Beranda" />
+	</LinearLayout>
+</LinearLayout>

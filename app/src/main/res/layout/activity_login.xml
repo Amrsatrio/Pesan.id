@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	android:padding="24dp">
+
+	<ImageView
+		android:id="@+id/imageView"
+		android:layout_width="wrap_content"
+		android:layout_height="120dp"
+		android:layout_marginTop="56dp"
+		android:layout_marginBottom="56dp"
+		android:adjustViewBounds="true"
+		android:src="@drawable/artwork_login" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/login_email"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Email" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/login_password"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Password"
+				android:inputType="textPassword" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<CheckBox
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Ingat saya" />
+
+		<Button
+			style="@style/Widget.Material3.Button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Masuk" />
+	</LinearLayout>
+
+	<View
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_weight="1" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Belum punya akun?" />
+
+		<Button
+			style="@style/Widget.Material3.Button.TextButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableEnd="@drawable/ic_chevron_right_24dp"
+			android:text="Daftar sekarang" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amrsatrio.pesanid.ui.QuantityPicker xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical">
+
+	<ImageButton
+		android:id="@+id/btnDecrement"
+		android:layout_width="32dp"
+		android:layout_height="32dp"
+		android:background="?selectableItemBackground"
+		android:src="@drawable/ic_remove_24dp" />
+
+	<TextView
+		android:id="@+id/txtQuantity"
+		android:layout_width="32dp"
+		android:layout_height="32dp"
+		android:background="#FFF"
+		android:gravity="center"
+		android:text="1" />
+
+	<ImageButton
+		android:id="@+id/btnIncrement"
+		android:layout_width="32dp"
+		android:layout_height="32dp"
+		android:background="?selectableItemBackground"
+		android:src="@drawable/ic_add_24dp" />
+</com.amrsatrio.pesanid.ui.QuantityPicker>

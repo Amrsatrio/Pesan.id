@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="Theme.PesanId" parent="Theme.Material3.Light">
+		<item name="android:statusBarColor">@color/purple_700</item>
+		<!--		<item name="android:windowBackground">#FFDF35</item>-->
+		<item name="colorPrimary">#0F0146</item>
+		<item name="android:navigationBarColor">@android:color/transparent</item>
+	</style>
+
+	<style name="Theme.PesanId.NoActionBar" parent="Theme.PesanId">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="android:statusBarColor">@android:color/transparent</item>
+		<item name="android:windowLightStatusBar">true</item>
+	</style>
+</resources>

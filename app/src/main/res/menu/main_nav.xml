@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/home"
+		android:icon="@drawable/ic_home_24dp"
+		android:title="Beranda" />
+	<item
+		android:id="@+id/orders"
+		android:icon="@drawable/ic_history_24dp"
+		android:title="Pemesanan" />
+	<item
+		android:id="@+id/profile"
+		android:icon="@drawable/ic_account_circle_24dp"
+		android:title="Profil" />
+</menu>

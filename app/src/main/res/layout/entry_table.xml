@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="52dp"
+	android:foreground="?selectableItemBackground"
+	android:paddingStart="16dp"
+	android:paddingEnd="16dp">
+
+	<LinearLayout
+		android:id="@+id/colorBox"
+		android:layout_width="match_parent"
+		android:layout_height="28dp"
+		android:layout_gravity="center_vertical"
+		android:background="#5DEA2C"
+		android:gravity="center_vertical"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp">
+
+		<TextView
+			android:id="@+id/tableNumber"
+			android:layout_width="16dp"
+			android:layout_height="16dp"
+			android:layout_marginEnd="12dp"
+			android:background="#FFF"
+			android:gravity="center"
+			android:includeFontPadding="false"
+			android:text="1" />
+
+		<TextView
+			android:id="@+id/status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Tersedia"
+			android:textColor="#FFF" />
+	</LinearLayout>
+</FrameLayout>
